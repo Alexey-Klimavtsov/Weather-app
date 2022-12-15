@@ -1,11 +1,11 @@
 import { storage } from "./storage.js";
 import { insertDetailUIData, insertDataForecast } from "./UI.js";
 const apiKey = '963072cd8104f7dac26bceb2c77dca9a'
-const serverUrl = 'http://api.openweathermap.org/data/2.5/weather';
-const serverForecast = 'http://api.openweathermap.org/data/2.5/forecast'
+const serverUrl = 'https://api.openweathermap.org/data/2.5/weather';
+const serverForecast = 'https://api.openweathermap.org/data/2.5/forecast'
 const getImageURL = (iconCode) =>
     `https://openweathermap.org/img/wn/${iconCode}@4x.png`;
-export const getForecastImgUrl = (iconCode) => `http://openweathermap.org/img/wn/${iconCode}@2x.png`;
+export const getForecastImgUrl = (iconCode) => `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
 let cityName = 'mersin';
 let weatherPicture = document.querySelector('.main__weather-sky');
 

@@ -3,10 +3,9 @@ import { locationList } from "./UI.js";
 // import { aa } from "./variables.js";
 
 
-
-
 export function removeLocationListItem(town) {
     return locationList.filter(item => item !== town);
+    console.log(town)
 }
 
 export function chekCityRepeat(town) {
